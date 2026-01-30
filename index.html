@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<style>
+  *{
+  
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  background: linear-gradient(135deg, #7aa7e3, #7bc2ba, #c576cc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Card */
+.main{
+  width: 500px;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  margin: 20px;
+}
+
+/* Title */
+.TO h1{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff4d4d;
+  margin-bottom: 20px;
+}
+
+.TO i{
+  vertical-align: middle;
+}
+
+/* Search Bar */
+.search{
+  display: flex;
+  gap: 10px;
+}
+
+/* Input */
+.text{
+  flex: 1;
+  height: 55px;
+  border-radius: 15px;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+  background: #f1f1f1;
+  outline: none;
+}
+
+.text::placeholder{
+  color: #999;
+}
+
+/* Add Button */
+.add{
+  width: 120px;
+  height: 55px;
+  border-radius: 15px;
+  background: #ff4d4d;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.add:hover{
+  background: #ff2e2e;
+  transform: scale(1.05);
+}
+
+.add:active{
+  transform: scale(0.95);
+}
+
+/* Todo List Container */
+.main1{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.buttonin{
+  padding: 15px;
+  
+   background: #ff4d4d;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-left: 30px;
+  color: white;
+  font-weight: 200;
+}
+.buttonin:hover{
+  background-color: rgb(236, 37, 37);
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+
+}
+/* Todo Item */
+.textyy{
+background-color:#e97e8e70 ;
+  width: 300px;
+  height: 50px;
+border-radius: 30px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+font-size: large;
+font-size-adjust: inherit;
+ max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+.textyy1{
+text-decoration: line-through;
+background-color:#9ac4c579 ;
+transition: 1s ease-in-out
+;
+}
+.todo{
+  background: linear-gradient(135deg, #ec4e66, #ff8fab);
+margin-top: 30px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  animation: fadeIn 0.4s ease;
+
+
+  
+}
+
+/* Small animation */
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#todoid{
+  background-color: white;
+
+}
+.underline{
+  text-decoration: line-through;
+  background-color: #ff2e2e;
+  color: black;
+}
+
+.ri-check-line{
+  
+  display: flex;
+
+
+  height: 50px;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+
+  padding: 11px;
+}
+.ri-check-line:hover{
+  cursor: pointer;
+ color: #48d4ff ;
+}
+</style>
+</head>
+<body>
+  <i class="ri-arrow-right-s-fill"></i>
+<div   class="main">
+  <div class="TO"><h1>To do list <i class="ri-todo-fill"></i></h1></div>
+<div class="search">  <input type="text" class="text" placeholder="Enter Your Text"> <div class="add"> ADD<i class="ri-add-box-fill"></i> </div>
+
+</div>
+
+
+
+
+</div>
+</div>
+<script src="pro.js"></script>
+</body>
+</html>
